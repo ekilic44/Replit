@@ -1,0 +1,21 @@
+package Loops;
+
+public class CountTripleMethod {
+    public static void main(String[] args) {
+
+        String str2= "javaaa and javvva JAVA";
+        int count= countTriples(str2);
+        System.out.println(count);
+
+    }
+    public static int countTriples(String str) {
+        int count = 0;
+        for (int i = 0; i < str.length() - 2; i++) {
+            if (str.charAt(i) == str.charAt(i + 1) && str.charAt(i) == str.charAt(i + 2)) {
+                count++;
+            }
+        }
+        return count;
+    }
+}
+
